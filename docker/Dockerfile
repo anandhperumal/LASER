@@ -27,7 +27,6 @@ ENV LANG=C.UTF-8
 WORKDIR /app
 
 COPY ./requirements.txt /app/requirements.txt
-COPY ./nllb $LASER/nllb
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt --verbose
